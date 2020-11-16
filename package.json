@@ -1,17 +1,12 @@
 {
-	"name": "get-port",
-	"version": "5.1.1",
-	"description": "Get an available port",
+	"name": "port.js",
+	"version": "1.0.0",
+	"description": "Get an available port.",
 	"license": "MIT",
-	"repository": "sindresorhus/get-port",
-	"funding": "https://github.com/sponsors/sindresorhus",
-	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
-	},
+	"repository": "JediThePro/port",
+	"author": "JediThePro"
 	"engines": {
-		"node": ">=8"
+		"node": ">=12"
 	},
 	"scripts": {
 		"test": "xo && ava && tsd"
