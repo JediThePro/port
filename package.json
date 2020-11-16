@@ -4,7 +4,7 @@
 	"description": "Get an available port.",
 	"license": "MIT",
 	"repository": "JediThePro/port",
-	"author": "JediThePro"
+	"author": "JediThePro",
 	"engines": {
 		"node": ">=12"
 	},
