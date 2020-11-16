@@ -1,17 +1,17 @@
-# get-port [![Build Status](https://travis-ci.org/sindresorhus/get-port.svg?branch=master)](https://travis-ci.org/sindresorhus/get-port)
+# <code>port.js</code>
 
 > Get an available [TCP port](https://en.wikipedia.org/wiki/Port_(computer_networking))
 
 ## Install
 
 ```
-$ npm install get-port
+$ npm install port.js
 ```
 
 ## Usage
 
 ```js
-const getPort = require('get-port');
+const getPort = require('port.js');
 
 (async () => {
 	console.log(await getPort());
@@ -85,25 +85,3 @@ First port of the range. Must be in the range `1024`...`65535`.
 Type: `number`
 
 Last port of the range. Must be in the range `1024`...`65535` and must be greater than `from`.
-
-## Beware
-
-There is a very tiny chance of a race condition if another process starts using the same port number as you in between the time you get the port number and you actually start using it.
-
-Race conditions in the same process are mitigated against by using a lightweight locking mechanism where a port will be held for a minimum of 15 seconds and a maximum of 30 seconds before being released again.
-
-## Related
-
-- [get-port-cli](https://github.com/sindresorhus/get-port-cli) - CLI for this module
-
----
-
-<div align="center">
-	<b>
-		<a href="https://tidelift.com/subscription/pkg/npm-get-port?utm_source=npm-get-port&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
-	</b>
-	<br>
-	<sub>
-		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
-	</sub>
-</div>
